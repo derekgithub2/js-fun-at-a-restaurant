@@ -9,18 +9,15 @@ function createMenuItem(name, price, type) {
 // var ingredients = [];
 
 function addIngredients(newFood, ingredients) {
-  return ingredients.push(newFood);
-  // console.log(addIngredients.ingredients);
+  this.ingredients = [];
+  if (this.ingredients.indexOf(newFood) === -1) {
+    return this.ingredients.push(newFood);
+    // console.log(this.ingredients);
+  }
+  if (newFood = this.ingredients.indexOf(newFood)) {
+    return this.ingredients.pop(newFood);
+  }
 };
-// addIngredients("cheese", ingredients);
-// addIngredients("cheese", ingredients);
-
-// var checkRepeat = ingredients.indexOf(newFood);
-// while (checkRepeat !== -1) {
-//   indices.push(checkRepeat);
-//   checkRepeat = ingredients.indexOf(newFood, checkRepeat + 1);
-// }
-// console.log(checkRepeat);
 
 
 module.exports = {
