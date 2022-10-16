@@ -30,6 +30,7 @@ function searchOrder (deliveryOrders, foodName) {
       isPresent = true;
     }
   }
+  // console.log(isPresent);
   return isPresent
 }
 
